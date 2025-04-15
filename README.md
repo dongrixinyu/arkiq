@@ -35,6 +35,22 @@
 - 2、给 AI 说出一只股票，让 AI 分析是该买入还是卖出。
 - 3、其它自由问答内容，你可以随意发挥。
 
+<p align="left">
+    <a alt="arkiq demo">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/arkiq-demo-image-1.jpg" style="width:500px;height:auto">
+    </a>
+</p>
+<p align="left">
+    <a alt="arkiq demo">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/arkiq-demo-image-2.jpg" style="width:500px;height:auto">
+    </a>
+</p>
+<p align="left">
+    <a alt="arkiq demo">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/arkiq-demo-image-3.jpg" style="width:500px;height:auto">
+    </a>
+</p>
+
 
 ## 原理介绍
 

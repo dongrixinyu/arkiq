@@ -32,14 +32,14 @@ $ export ARK_API_KEY={your api key}
 
 并且在火山引擎模型广场上选择需要的模型，这里需要一个 LLM ，以及一个 VLM。
 <p align="left">
-    <a alt="jionlp logo">
+    <a alt="arkiq logo">
         <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/model_ground_pic.jpg" style="width:400px;height:auto">
     </a>
 </p>
 
 在这里我默认选用 `doubao-1-5-vision-pro-32k-250115` 和 `doubao-1-5-pro-32k-250115`，模型均对应一个接入点 end_point_id，如图所示。
 <p align="left">
-    <a alt="jionlp logo">
+    <a alt="arkiq logo">
         <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/model_online_pic.jpg" style="width:400px;height:auto">
     </a>
 </p>
@@ -91,4 +91,15 @@ $ export WEB_SERVER_PORT={your web server port}
 $ python arkiq/webui.py
 ```
 
-好了，可以在浏览器上访问 web server 地址了。访问地址是：`http://{WEB_SERVER_IP}:{WEB_SERVER_PORT}/`
+好了，可以在浏览器上访问 web server 地址了。访问地址是：`http://{WEB_SERVER_IP}:{WEB_SERVER_PORT}/`。效果如下：
+
+<p align="left">
+    <a alt="arkiq demo">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/arkiq-demo-image-1.jpg" style="width:400px;height:auto">
+    </a>
+</p>
+<p align="left">
+    <a alt="arkiq demo">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/arkiq-demo-image-2.jpg" style="width:400px;height:auto">
+    </a>
+</p>
