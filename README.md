@@ -1,6 +1,6 @@
 <p align="center">
     <a alt="jionlp logo">
-        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/arkiq-logo.jpg" style="width:300px;height:auto">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/arkiq-logo.jpg" style="width:300px;height:auto;-webkit-mask-image: linear-gradient(to right, transparent, black, transparent);mask-image: linear-gradient(to right, transparent, black, transparent);">
     </a>
 </p>
 

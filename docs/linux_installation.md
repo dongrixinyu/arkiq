@@ -33,14 +33,14 @@ $ export ARK_API_KEY={your api key}
 并且在火山引擎模型广场上选择需要的模型，这里需要一个 LLM ，以及一个 VLM。
 <p align="left">
     <a alt="jionlp logo">
-        <img src="../../quant_trading/image/model_ground_pic.jpg?raw=true" style="width:auto;height:300px">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/model_ground_pic.jpg" style="width:400px;height:auto">
     </a>
 </p>
 
 在这里我默认选用 `doubao-1-5-vision-pro-32k-250115` 和 `doubao-1-5-pro-32k-250115`，模型均对应一个接入点 end_point_id，如图所示。
 <p align="left">
     <a alt="jionlp logo">
-        <img src="../../quant_trading/image/model_online_pic.jpg?raw=true" style="width:auto;height:300px">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/model_online_pic.jpg" style="width:400px;height:auto">
     </a>
 </p>
 
@@ -48,10 +48,10 @@ $ export ARK_API_KEY={your api key}
 
 执行环境变量操作：
 ```
-export VLM_MODEL_NAME={your vlm model}
-export VLM_MODEL_ENDPOINT_ID={your vlm end point id}
-export LLM_MODEL_NAME={your llm model}
-export LLM_MODEL_ENDPOINT_ID={your llm end point id}
+$ export VLM_MODEL_NAME={your vlm model}
+$ export VLM_MODEL_ENDPOINT_ID={your vlm end point id}
+$ export LLM_MODEL_NAME={your llm model}
+$ export LLM_MODEL_ENDPOINT_ID={your llm end point id}
 ```
 
 ### step 4: 安装 python 与三方库依赖
@@ -75,7 +75,7 @@ $ export AI_SERVER_PORT={your ai server port}
 
 - 启动服务
 ```
-$ python quant_trading/server.py
+$ python arkiq/server.py
 ```
 
 ### step 6: 启动 web server
@@ -88,7 +88,7 @@ $ export WEB_SERVER_PORT={your web server port}
 
 - 启动服务
 ```
-$ python quant_trading/webui.py
+$ python arkiq/webui.py
 ```
 
 好了，可以在浏览器上访问 web server 地址了。访问地址是：`http://{WEB_SERVER_IP}:{WEB_SERVER_PORT}/`
