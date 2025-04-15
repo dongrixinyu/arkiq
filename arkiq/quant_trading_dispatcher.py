@@ -30,12 +30,13 @@ from task import StocksPredictionTask, IndividualStockPredictionTask
 
 DIR_PATH = os.path.dirname(os.path.dirname(__file__))
 HISTORY_DIR_PATH = os.path.join(DIR_PATH, "history_data")
+CUR_DIR_PATH = os.path.dirname(__file__)
 
 
 class QuantTradingDispatcher(BaseAPI):
     def __init__(self, ):
         super().__init__()
-        with open(os.path.join(DIR_PATH, 'quant_trading/data/stock_dictionary.txt'), 'r', encoding='utf-8') as fr:
+        with open(os.path.join(CUR_DIR_PATH, 'data/stock_dictionary.txt'), 'r', encoding='utf-8') as fr:
             content = fr.readlines()
 
         self.stock_name_id_dict = {}

@@ -16,14 +16,14 @@ for server
 """
 
 # recommend to use DeepSeek-R1 model
-LLM_BROWSING_MODEL_NAME = "doubao-pro-32k-browsing-241115"
-LLM_BROWSING_MODEL_ENDPOINT_ID = "ep-m-20250318111841-mlzkp"
+LLM_BROWSING_MODEL_NAME = os.getenv('LLM_BROWSING_MODEL_NAME') or ""
+LLM_BROWSING_MODEL_ENDPOINT_ID = os.getenv('LLM_BROWSING_MODEL_ENDPOINT_ID') or ""
 
-VLM_MODEL_NAME = "doubao-1-5-vision-pro-32k-250115"
-VLM_MODEL_ENDPOINT_ID = "ep-m-20250318094241-f5887"
+VLM_MODEL_NAME = os.getenv('VLM_MODEL_NAME') or ""
+VLM_MODEL_ENDPOINT_ID = os.getenv('VLM_MODEL_ENDPOINT_ID') or ""
 
-LLM_MODEL_NAME = "doubao-1-5-pro-32k-250115"
-LLM_MODEL_ENDPOINT_ID = "ep-m-20250316221825-6fglr"
+LLM_MODEL_NAME = os.getenv('LLM_MODEL_NAME') or ""
+LLM_MODEL_ENDPOINT_ID = os.getenv('LLM_MODEL_ENDPOINT_ID') or ""
 
 # default set to volc bot, if using tavily, change it into "tavily"
 SEARCH_ENGINE = os.getenv('SEARCH_ENGINE') or "volc_bot"
@@ -40,9 +40,12 @@ for webui
 ARK_API_KEY = os.getenv('ARK_API_KEY') or "{YOUR_ARK_API_KEY}"
 # api server address for web ui
 
-IP = "192.168.35.51"
-PORT = 8080
-ARK_API_ADDR = f"http://{IP}:{PORT}/api/v1/bots"
+ARK_SERVER_IP = os.getenv('ARK_SERVER_IP')
+ARK_SERVER_PORT = int(os.getenv('ARK_SERVER_PORT'))
+ARK_API_ADDR = f"http://{ARK_SERVER_IP}:{ARK_SERVER_PORT}/api/v1/bots"
+
+WEB_SERVER_IP = os.getenv('WEB_SERVER_IP')
+WEB_SERVER_PORT = int(os.getenv('WEB_SERVER_PORT'))
 
 # while using remote api, need bot id
 API_BOT_ID = os.getenv("API_BOT_ID") or "{YOUR_API_BOT_ID}"

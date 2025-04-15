@@ -20,8 +20,10 @@ from pydantic import BaseModel
 from openai import OpenAI
 from typing import Any, Generator
 
-from config import (ARK_API_KEY, ARK_API_ADDR, LLM_MODEL_NAME,
-                    VLM_MODEL_NAME, LLM_BROWSING_MODEL_NAME)
+from config import (
+    ARK_API_KEY, ARK_API_ADDR, LLM_MODEL_NAME,
+    VLM_MODEL_NAME, LLM_BROWSING_MODEL_NAME,
+    WEB_SERVER_IP, WEB_SERVER_PORT)
 from quant_trading_dispatcher import QuantTradingDispatcher
 
 # pdb.set_trace()
@@ -95,4 +97,6 @@ with gr.Blocks(css=block_css, theme=gr.themes.Default(**default_theme_args)) as 
                     outputs=[chatbot])
 
 # 启动应用
-demo.launch(server_name="0.0.0.0", server_port=7860)
+demo.launch(
+    server_name=WEB_SERVER_IP,
+    server_port=WEB_SERVER_PORT)

@@ -21,11 +21,6 @@ from arkitect.telemetry.trace import task
 import config
 from prompt import VLM_OCR_PROMPT
 
-endpoint_id = "ep-m-20250316221825-6fglr"  # https://console.volcengine.com/ark/region:ark+cn-beijing/endpoint
-
-# model_name = "doubao-pro-32k-browsing-241115"
-model_name = "doubao-pro-32k-241215"
-
 
 # @task()
 async def chat_with_llm(
@@ -35,7 +30,7 @@ async def chat_with_llm(
 
     parameters = ArkChatParameters(**request.__dict__)
     llm = BaseChatLanguageModel(
-        endpoint_id=endpoint_id,
+        endpoint_id=config.LLM_MODEL_ENDPOINT_ID,
         messages=request.messages,
         parameters=parameters,
     )
@@ -144,7 +139,7 @@ async def main(request: ArkChatRequest) -> AsyncIterable[Response]:
 
 
 if __name__ == "__main__":
-    port = os.getenv("_FAAS_RUNTIME_PORT")
+    port = config.ARK_SERVER_PORT
     launch_serve(
         package_path="server",
         port=int(port) if port else 8080,
