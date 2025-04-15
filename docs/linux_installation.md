@@ -2,10 +2,9 @@
 
 ### step 1: 拉取代码
 ```
-$ git clone https://github.com/volcengine/ai-app-lab
-$ cd ai-app-lab/demohouse/quant_trading/
+$ git clone https://github.com/dongrixinyu/arkiq
+$ cd arkiq
 ```
-
 
 ### step 2: 安装浏览器依赖
 

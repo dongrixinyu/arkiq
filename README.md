@@ -1,6 +1,6 @@
 <p align="center">
     <a alt="jionlp logo">
-        <img src="../../blob/master/image/arkiq-logo.jpg?raw=true" style="width:300px;height:auto">
+        <img src="https://raw.githubusercontent.com/dongrixinyu/arkiq/refs/heads/main/image/arkiq-logo.jpg" style="width:300px;height:auto">
     </a>
 </p>
 
