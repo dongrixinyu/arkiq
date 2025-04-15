@@ -1,25 +1,31 @@
 <p align="center">
     <a alt="jionlp logo">
-        <img src="../../blob/master/image/arkiq-logo.jpg" style="width:300px;height:auto">
+        <img src="../../blob/master/image/arkiq-logo.jpg?raw=true" style="width:300px;height:auto">
     </a>
 </p>
 
-# 股票交易 AI 辅助预测工具
+# arkiq 股票交易 AI 辅助预测工具
 
-股票交易是一个挺个性化的事情，每个人有自己的买卖策略，各不相同。
+股票交易是一个挺个性化的事情，每个人有自己的买卖交易策略，各不相同。
 
-不过，不论你怎么操作交易，总离不开**资金面、大盘面、消息面**三个方面。能够利用 AI 来实现自动量化交易是个极具定制化、个性化的需求。市面上的量化交易软件，要么需要收费，要么有较高使用门槛。所以，我们想利用 AI 做一款开源的股票量化交易系统，**让每个人都能用上量化交易，并且每个人都能定制自己的交易策略**。
+不过，不论你怎么操作交易，总离不开**资金面、大盘面、消息面**三个方面。arkiq 能够利用 AI 来实现极具定制化、个性化的自动决策交易。arkiq的目标是，**让每个散户都能用上自动化交易，并且都能定制自己的交易策略**。
 
+## arkiq 特性与优势
 
-## 安装方法 Installation
+- [x] 每日自动抓取财经新闻，分析荐股并推送股票信息；
+- [x] 根据用户指定股票，自动分析行情，分析股票买卖策略；
+- [ ] 支持用户自定义交易倾向和策略；
+- [x] 支持A股；
+- [ ] 支持港股；
+- [ ] 支持美股；
+- [ ] 支持 qmt，ptrade 接口；
+- [ ] 支持 windows 平台部署，一键化启动
 
-提供不同操作平台的安装方法
+## arkiq 安装方法 Installation
 
-### [Linux安装方法](../../demohouse/quant_trading/docs/linux_installation.md)
+- 默认采用 [Linux安装方法](../../blob/main/docs/linux_installation.md)
+- 对于许多股民来说，并不会编程，也不使用 Linux，因此在 Windows 上的安装，我打算提供一体化打包安装。[Windows安装方法](../../blob/main/docs/windows_installation.md) TODO
 
-### [Windows安装方法]() TODO
-
-- 对于许多股民来说，并不会编程，也不使用 Linux，因此在 Windows 上的安装，我打算提供一体化打包安装。
 
 ## 使用方法
 
